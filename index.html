@@ -9,12 +9,13 @@
   <link rel="stylesheet" href="libs/normalize.min.css">
 </head>
     <!-- 背景音乐部分 -->
-<audio id="loveBgm" src="./libs/love.mp3"  autoplay="autoplay" loop="loop"></audio>  
+<audio id="loveBgm" src="./libs/love.mp3"   loop="loop"></audio>  
 <body style="word-wrap:break-word;overflow:auto;">
   <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
   <script src='libs/jquery.min.js'></script>
   <script src="index.js"></script>
     <script type="text/javascript">
+      $("#loveBgm")[0].play();  
         $(document).ready(function(){      
                 $.getJSON("https://api.demo.xiyuan.ren:8443/tg/teststat",function(result){                              });
 
