@@ -59,7 +59,7 @@
 
   commentTime = 40;
 
-  codeTime = 1;
+  codeTime = 0.1;
 
   $(document).on('ready page:load', function() {
     return $('#skipAnimation').click(function() {
